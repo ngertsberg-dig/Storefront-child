@@ -42,7 +42,7 @@ if(is_single() != 1){
 else{
 	$name = $post -> post_type;
 }
-$theme = get_template_directory_uri() . '/';
+$theme = get_template_directory_uri() . '-child/';
 $scriptToLoad = $theme.'build/js/'.$name.'.js';
 $loadMenu  = $theme.'/build/js/menu.js';
 ?>

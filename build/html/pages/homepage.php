@@ -3,5 +3,5 @@
 
 ?>
 <div class = 'page-view homepage'>
-	<h1> Homepage NZ</h1>
+	<h1> HOMEPAGE NZ</h1>
 </div>
