@@ -1,0 +1,150 @@
+@import '../partials/variables.sass'
+.page-view.homepage
+	.slider-container
+		.swiper-container
+			.next-slide,.previous-slide
+				transition: all 0.22s ease
+				position: absolute
+				z-index: 999
+				color: white
+				font-size: 30px
+				opacity: 0
+				&:hover
+					cursor: pointer
+			.next-slide
+				top: 50%
+				right: 10px
+				transform: translateX(20px)
+			.previous-slide
+				top: 50%
+				left: 10px
+				transform: translateX(-20px)
+			&:hover
+				.next-slide,.previous-slide
+					transition: all 0.22s ease
+					opacity: 1
+					transform: initial
+			.swiper-wrapper
+				.swiper-slide
+					min-height: 50vh
+					background-repeat: no-repeat
+					background-size: cover
+					background-position: center center
+					height: 50vh
+					display: flex
+					.slider-content
+						width: 50%
+						margin: 0 auto
+						height: 100%
+						display: flex
+						flex-direction: column
+						align-items: center
+						justify-content: center
+						text-align: center
+						@media(max-width:767px)
+							width: 75%
+							@media(max-width:500px)
+								width: 95%
+						p
+							color: white
+						.slider-header
+							padding-bottom: 10px
+							position: relative
+							&:after
+								content: ''
+								position: absolute
+								bottom: 0px
+								left: 0px
+								width: 300px
+								background-color: white
+								margin: 0 auto
+								height: 5px
+								left: calc(50% - 150px)
+
+							p
+								font-family: $header
+								font-weight: 600
+								font-size: 45px
+								@media(max-width:767px)
+									font-size: 30px
+
+						.slider-sub-heading
+							padding-bottom: 10px
+							padding-top: 10px
+							p
+								font-family: $header
+								font-weight: 600
+								font-size: 34px
+								@media(max-width:767px)
+									font-size: 20px
+						.slider-time
+							padding-bottom: 10px
+							p
+								font-family: $header
+								font-weight: 600
+								font-size: 18px
+								@media(max-width:767px)
+									font-size: 16px
+						.slider-link
+							padding-bottom: 10px
+							a
+								font-family: $header
+								font-weight: 600
+								color: white
+								text-decoration: none
+								font-size: 24px
+								@media(max-width:767px)
+									font-size: 18px
+	.under-slider
+		padding-top: 25px
+		text-align: center
+		.under-slider-para
+			width: 400px
+			margin: 0 auto
+			margin-bottom: 10px
+			@media(max-width:500px)
+				width: 90%
+			p
+				font-family: $header
+				color: black
+				font-size: 20px
+				@media(max-width:767px)
+					font-size: 16px
+		.under-slider-header
+			h5
+				font-family: $header
+				color: $brand
+				font-size: 34px
+				@media(max-width:767px)
+					font-size: 20px
+	.four-icons
+		background-color: white
+		.icons-wrapper
+			display: flex
+			padding: 70px 0px
+			justify-content: center
+			flex-wrap: wrap
+			@media(max-width:1000px)
+				padding: 50px 0px
+			.icon
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				flex-basis: 25%
+				@media(max-width:1000px)
+					flex-basis: 50%
+					margin-top: 25px
+					@media(max-width:767px)
+						flex-basis: 100%
+				.icon-image
+					img
+				.icon-header
+					padding: 15px 0px
+					p
+						font-family: $header
+						text-align: center
+				.icon-text
+					p
+						font-family: $para
+						text-align: center
